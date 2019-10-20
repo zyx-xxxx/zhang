@@ -3,7 +3,9 @@
 ## 一、数据处理  
 ### 1、在地图上画出定位点   
   ```{r}
-
+data_model<-read.csv("df3.csv",header = T)
+data_model_5 <- data_model[,5:6]
+plot(data_model_5,main="sample number",xlab="",ylab="")
 
 ```     
 ### 二、聚类
