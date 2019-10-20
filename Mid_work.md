@@ -11,7 +11,7 @@ plot(data_model_5,main="sample number",xlab="",ylab="")
 ### 二、聚类
 
 #### 1、使用K-means算法对坐标起点聚类
-####  起点数据的原始样本点
+####  （1）起点数据的原始样本点
   ```{r}
 data_model<-read.csv("df3.csv",header = T)
 data_model_5 <- data_model[,5:6]
@@ -19,19 +19,19 @@ plot(data_model_5,main="sample number",xlab="",ylab="")
 
 ```   
 
-#### k=2时，起始点的聚类效果图
+#### （2）k=2时，起始点的聚类效果图
   ```{r}
 KMClu1<-kmeans(data_model_5,centers=2)
 plot(data_model_5,col=(KMClu1$cluster+1),main="K-Means聚类K=2",xlab="",ylab="",pch=20,cex=1.5)
 ``` 
 
-####  k=3时，起始点的聚类效果图
+####  （3）k=3时，起始点的聚类效果图
   ```{r}
 KMClu1<-kmeans(data_model_5,centers=3)
 plot(data_model_5,col=(KMClu1$cluster+1),main="K-Means聚类K=3",xlab="",ylab="",pch=20,cex=1.5)
 ```
 
-####  k=4时，起始点的聚类效果图
+####  （5）k=4时，起始点的聚类效果图
   ```{r}
 KMClu1<-kmeans(data_model_5,centers=4)
 plot(data_model_5,col=(KMClu1$cluster+1),main="K-Means聚类K=4",xlab="",ylab="",pch=20,cex=1.5)
@@ -42,7 +42,7 @@ plot(data_model_5,col=(KMClu1$cluster+1),main="K-Means聚类K=4",xlab="",ylab=""
 
 #### 2、使用K-means算法对坐标终点聚类
 
-####终点数据的原始样本点
+#### （1）终点数据的原始样本点
   ```{r}
 data_model<-read.csv("df3.csv",header = T)
 data_model_5 <- data_model[,7:8]
@@ -50,19 +50,19 @@ plot(data_model_5,main="sample number",xlab="",ylab="")
 
 ```   
 
-#### k=2时，终点的聚类效果图
+#### （2）k=2时，终点的聚类效果图
   ```{r}
 KMClu1<-kmeans(data_model_5,centers=2)
 plot(data_model_5,col=(KMClu1$cluster+1),main="K-Means聚类K=2",xlab="",ylab="",pch=20,cex=1.5)
 ``` 
 
-####  k=3时，终点的聚类效果图
+####  （3）k=3时，终点的聚类效果图
   ```{r}
 KMClu1<-kmeans(data_model_5,centers=3)
 plot(data_model_5,col=(KMClu1$cluster+1),main="K-Means聚类K=3",xlab="",ylab="",pch=20,cex=1.5)
 ```
 
-####  k=4时，终点的聚类效果图
+####  （4）k=4时，终点的聚类效果图
   ```{r}
 KMClu1<-kmeans(data_model_5,centers=4)
 plot(data_model_5,col=(KMClu1$cluster+1),main="K-Means聚类K=4",xlab="",ylab="",pch=20,cex=1.5)
